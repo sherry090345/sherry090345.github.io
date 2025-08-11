@@ -22,7 +22,7 @@ repository               : "sherry090345/sherry090345.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/bio.jpg"
+  avatar           : "https://sherry090345.github.io/images/bio.jpg"
   name             : "Sherry (Hairong) Liu"
   pronouns         : "She/Her"  
   bio              : "Short biography for the left-hand sidebar"
