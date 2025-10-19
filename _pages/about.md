@@ -12,10 +12,12 @@ I am currently a Research Data Coordinator at the Johns Hopkins Welch Center for
 Education
 ------
 - MHS in Epidemiology, Johns Hopkins Bloomberg School of Public Health, USA (2021–2023)
-Thesis: Blood Urea Nitrogen and Incident Heart Failure (ARIC Study)
+
+  Thesis: Blood Urea Nitrogen and Incident Heart Failure (ARIC Study)
 
 - B.S. in Chemical Biology, Northwest A&F University, China (2017–2021)
-Thesis: Large-scale Data Analytics for Biopharmaceuticals
+
+  Thesis: Large-scale Data Analytics for Biopharmaceuticals
 
 Selected Publication
 ------
@@ -31,24 +33,24 @@ Selected Publication
 
 Ishigami J, **Liu H,** Zhao D, Sabit A, Pathiravasan CH, Charleston J, Miller ER 3rd, Matsushita K, Appel LJ, Brady TM.
 
-[Calcified Coronary Lesion Number and Risk of Cardiovascular Disease in the 75-and-Older Population: The ARIC Study](https://www.jacc.org/doi/10.1016/j.jcmg.2025.05.014), JACC Cardiovasc Imaging.
+[A homogeneous polysaccharide from Lycium barbarum: Structural characterizations, anti-obesity effects and impacts on gut microbiota](https://www.sciencedirect.com/science/article/abs/pii/S0141813021011934), Int J Biol Macromol.
 
-Zou S, **Liu H,** Mok Y, Gami A, Chen LY, Budoff M, Blaha MJ, Matsushita K.
+Yang Y, Chang Y, Wu Y, **Liu H,** Liu Q, Kang Z, Wu M, Yin H, Duan J.
 
 Selected Ongoing Projects
 ------
 - **Proteomics and Valvular Calcification (ARIC and MESA studies)**
 
-Analyzing large-scale protein biomarkers to identify pathways associated with aortic and mitral valve calcification.
+  Analyzing large-scale protein biomarkers to identify pathways associated with aortic and mitral valve calcification.
 
 - **Machine Learning for Coronary Calcium Density**
 
-Developing prediction models that integrate volume and density metrics to improve risk stratification in older adults.
+  Developing prediction models that integrate volume and density metrics to improve risk stratification in older adults.
 
 - **School Food Environment Policy Evaluation in Nepal**
 
-Assessing trans-fat reduction following municipal healthy food procurement policies using mixed-effects models.
+  Assessing trans-fat reduction following municipal healthy food procurement policies using mixed-effects models.
 
 - **Community-Based Hypertension Control in Bangladesh (CB-HEARTS)**
 
-Evaluating population-level blood pressure control and medication trajectories using longitudinal data.
+  Evaluating population-level blood pressure control and medication trajectories using longitudinal data.
