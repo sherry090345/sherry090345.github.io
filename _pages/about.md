@@ -11,11 +11,11 @@ I am currently a Research Data Coordinator at the Johns Hopkins Welch Center for
 
 Education
 ------
-MHS in Epidemiology, Johns Hopkins Bloomberg School of Public Health, USA (2021–2023)
-- Thesis: Blood Urea Nitrogen and Incident Heart Failure (ARIC Study)
+- MHS in Epidemiology, Johns Hopkins Bloomberg School of Public Health, USA (2021–2023)
+Thesis: Blood Urea Nitrogen and Incident Heart Failure (ARIC Study)
 
-B.S. in Chemical Biology, Northwest A&F University, China (2017–2021)
-- Thesis: Large-scale Data Analytics for Biopharmaceuticals
+- B.S. in Chemical Biology, Northwest A&F University, China (2017–2021)
+Thesis: Large-scale Data Analytics for Biopharmaceuticals
 
 Selected Publication
 ------
@@ -37,18 +37,18 @@ Zou S, **Liu H,** Mok Y, Gami A, Chen LY, Budoff M, Blaha MJ, Matsushita K.
 
 Selected Ongoing Projects
 ------
-**- Proteomics and Valvular Calcification (ARIC and MESA studies)**
+- **Proteomics and Valvular Calcification (ARIC and MESA studies)**
 
 Analyzing large-scale protein biomarkers to identify pathways associated with aortic and mitral valve calcification.
 
-**- Machine Learning for Coronary Calcium Density**
+- **Machine Learning for Coronary Calcium Density**
 
 Developing prediction models that integrate volume and density metrics to improve risk stratification in older adults.
 
-**- School Food Environment Policy Evaluation in Nepal**
+- **School Food Environment Policy Evaluation in Nepal**
 
 Assessing trans-fat reduction following municipal healthy food procurement policies using mixed-effects models.
 
-**- Community-Based Hypertension Control in Bangladesh (CB-HEARTS)**
+- **Community-Based Hypertension Control in Bangladesh (CB-HEARTS)**
 
 Evaluating population-level blood pressure control and medication trajectories using longitudinal data.
