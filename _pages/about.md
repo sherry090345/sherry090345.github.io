@@ -13,6 +13,7 @@ Education
 ------
 MHS in Epidemiology, Johns Hopkins Bloomberg School of Public Health, USA (2021–2023)
 - Thesis: Blood Urea Nitrogen and Incident Heart Failure (ARIC Study)
+
 B.S. in Chemical Biology, Northwest A&F University, China (2017–2021)
 - Thesis: Large-scale Data Analytics for Biopharmaceuticals
 
