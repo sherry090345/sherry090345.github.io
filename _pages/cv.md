@@ -40,17 +40,17 @@ redirect_from:
 ---
 
 ## Research Focus
-* Cardiovascular epidemiology  
-* Imaging biomarkers: coronary calcium, valvular calcification  
+* Cardiovascular Epidemiology  
+* Imaging, Digital and Blood Biomarkers: calcification, wearable devices ouput, proteomics and Metabolomics.
 * Proteomics and machine learning for risk prediction  
-* Global health interventions in hypertension and nutrition policy  
+* Global health interventions in hypertension   
 
 ---
 
-## Honors & Awards
-- **AHA Scientific Sessions Presenter**, 2024 & 2025  
-- **JAMA Internal Medicine Publication**, first-author clinical trial, 2024  
-- **Full Scholarship**, Johns Hopkins Bloomberg School of Public Health  
+## Honors & Awards 
+- **Epidemiology Program Tuition Scholarship**, Johns Hopkins University, 2021-2023
+- **Undergraduate Scholarship**, Northwest A&F Univerisity, 2019-2020 
+- **JAMA Internal Medicine Publication**, first-author clinical trial, 2024 
 
 ---
 
@@ -93,7 +93,6 @@ redirect_from:
 ---
 
 ## Professional Service
-- Reviewer for cardiovascular epidemiology abstracts (AHA)  
 - Contributor to open-source R package **compareCstat** (CRAN 2025)  
 - Research mentor for junior analysts (Welch Center)
 
