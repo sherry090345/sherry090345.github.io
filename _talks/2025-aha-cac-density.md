@@ -5,7 +5,7 @@ collection: talks
 type: "Poster Presentation"
 permalink: /talks/2025-aha-cac-density
 venue: "American Heart Association (AHA) Scientific Sessions 2025"
-date: 2025
+date: 2025-11-10
 location: "New Orleans, LA, USA"
 ---
 
