@@ -16,3 +16,6 @@ Key Highlights:
 - First randomized trial to isolate positioning effect
 - Demonstrated up to 7–10 mmHg error from unsupported positions
 - Supports updated clinical measurement guidelines
+
+**Reference:** [AHA Journals – Abstract MP08](https://www.ahajournals.org/doi/10.1161/circ.149.suppl_1.MP08)  
+<a class="btn btn--primary btn--small" href="https://www.ahajournals.org/doi/10.1161/circ.149.suppl_1.MP08" target="_blank" rel="noopener">Read online</a>
