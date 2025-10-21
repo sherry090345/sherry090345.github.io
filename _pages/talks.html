@@ -14,3 +14,51 @@ author_profile: true
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
+<style>
+/* === 通用样式：Teaching + Talks 页面统一风格 === */
+.archive .archive__item-title a {
+  font-size: 20px !important;
+  font-weight: 650;
+  color: #7393B3 !important;  /* 你指定的颜色 */
+  text-decoration: none !important;
+}
+.archive .archive__item-title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page__title {
+  font-size: 26px !important;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.page__content {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1f2937;
+  font-family: "Inter","Helvetica Neue",Arial,sans-serif;
+}
+
+/* link color for page content */
+.page__content a {
+  color: #7393B3 !important;
+  text-decoration: none !important;
+}
+.page__content a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* archive item block spacing */
+.archive__item {
+  padding: 12px 0 18px;
+  border-bottom: 1px solid #e6ebe4;
+}
+.archive__item-excerpt {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.65;
+}
+</style>
