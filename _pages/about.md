@@ -95,7 +95,7 @@ redirect_from:
 <div id="home">
 
 <p>
-  I am currently a Research Data Coordinator working with <strong>Dr. Kuni Matsushita, Dr. Lawrry Appel and Dr. Tammy Brady</strong>strong> at the Johns Hopkins Welch Center for Prevention, Epidemiology and Clinical Research. I completed my Master of Health Science in Epidemiology at the Johns Hopkins Bloomberg School of Public Health in 2023 and received my Bachelor’s degree in Chemical Biology from Northwest A&amp;F University in China in 2021. 
+  I am currently a Research Data Coordinator working with <strong>Dr. Kuni Matsushita, Dr. Lawrry Appel and Dr. Tammy Brady </strong> at the Johns Hopkins Welch Center for Prevention, Epidemiology and Clinical Research. I completed my Master of Health Science in Epidemiology at the Johns Hopkins Bloomberg School of Public Health in 2023 and received my Bachelor’s degree in Chemical Biology from Northwest A&amp;F University in China in 2021. 
 
   My research focuses on cardiovascular epidemiology, particularly biomarker discovery such as <strong>blood biomarkers (proteomics and Metabolomics),imaging biomarkers (CT, ECHO and etc.) and digital biomarkers (longitudinal BP, heart rate and other vitals from wearable devices)</strong> to improve risk prediction and clinical decisions for chronic disease.
 </p>
