@@ -13,13 +13,13 @@ redirect_from:
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
 <style>
-  /* ===== Scoped Home Styles (bigger text, bigger figures) ===== */
+  /* ===== Scoped Home Styles (bigger text, big figures) ===== */
   #home{
     --text:#101318;
     --muted:#5e6472;
     --line:rgba(16,19,24,.12);
     --accent:#0b72ff;
-    --thumbW: clamp(220px, 28vw, 360px); /* << big, fluid thumbnail width */
+    --thumbW: clamp(220px, 28vw, 360px); /* big, fluid width */
     font-family:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color:var(--text);
     font-size:13.5px;
@@ -46,11 +46,11 @@ redirect_from:
   #home .sep{ height:1px; background:var(--line); margin:1.1rem 0; }
   #home .journal{ font-family:"Merriweather", Georgia, "Times New Roman", serif; font-weight:700; font-style:italic; }
 
-  /* ===== Publication cards (large thumbnails) ===== */
+  /* ===== Publication cards ===== */
   #home .pubs{ display:flex; flex-direction:column; gap:1rem; }
   #home .pub-card{
     display:grid;
-    grid-template-columns: var(--thumbW) 1fr; /* big figure */
+    grid-template-columns: var(--thumbW) 1fr;
     align-items:center;
     gap:1rem;
     border:1px solid var(--line);
@@ -58,23 +58,31 @@ redirect_from:
     padding:.9rem;
     background:#fbfbfd;
   }
+
   #home .pub-card .thumb{
     width:var(--thumbW);
-    aspect-ratio:16 / 10;              /* consistent window, no squish */
+    aspect-ratio:16 / 10;
     border-radius:12px;
     overflow:hidden;
     background:#f2f2f5;
     box-shadow:0 4px 16px rgba(0,0,0,.05);
   }
   #home .pub-card .thumb img{
-    width:100%; height:100%; object-fit:cover; display:block;
+    width:100%; height:100%;
+    object-fit:cover;              /* default: crop to fill nicely */
+    object-position:center;
+    display:block;
   }
+  /* For wide figures you want fully visible: use .thumb.contain */
+  #home .pub-card .thumb.contain{ background:#fff; }
+  #home .pub-card .thumb.contain img{ object-fit:contain; }  /* show whole figure */
+
   #home .pub-card .title{ margin:0 0 .2rem 0; line-height:1.45; font-size:1.02em; }
   #home .pub-card .title a{ color:var(--text); text-decoration:none; border-bottom:1px solid rgba(11,114,255,.25); }
   #home .pub-card .title a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
   #home .pub-card .authors{ margin-top:.35rem; }
 
-  /* Mobile: still prominent, just narrower */
+  /* Mobile */
   @media (max-width: 680px){
     #home{ font-size:12px; line-height:1.65; }
     #home h1, #home h2, #home h3{ font-size:15px; }
@@ -107,9 +115,9 @@ I am currently a Research Data Coordinator at the Johns Hopkins Welch Center for
 
 <div class="pubs">
 
-  <!-- ARMS -->
+  <!-- ARMS: use .contain so the full wide figure is visible -->
   <div class="pub-card">
-    <div class="thumb">
+    <div class="thumb contain">
       <img src="/images/ARMS.png" alt="ARMS crossover trial figure">
     </div>
     <div class="content">
