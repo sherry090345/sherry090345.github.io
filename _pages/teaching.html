@@ -10,3 +10,48 @@ author_profile: true
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
+<style>
+.archive .archive__item-title a {
+  font-size: 16px !important; /* 降低字体 */
+  font-weight: 650;
+  color: #1f2937 !important; /* 深灰色，不是亮蓝 */
+  text-decoration: none !important;
+}
+.archive .archive__item-title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Teaching 详情页标题 */
+.page__title {
+  font-size: 22px !important;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+/* 正文文字 */
+.page__content {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #1f2937;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 正文中的强调（如 *When:*） */
+.page__content em {
+  color: #6b7280;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* 链接美化 */
+.page__content a {
+  color: #2563eb;
+  text-decoration: none !important;
+}
+.page__content a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+</style>
