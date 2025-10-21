@@ -16,7 +16,6 @@ classes: publications-page
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
 <style>
-  /* Base tokens */
   .publications-page{
     --text:#121212;
     --muted:#5b5b5b;
@@ -26,119 +25,78 @@ classes: publications-page
     --pill-border:#cfe0ff;
   }
 
-  /* Section title */
   .publications-page .pub-section-title{
-    font-size:14px;
-    line-height:1.4;
-    margin:.75rem 0 .5rem;
-    letter-spacing:.2px;
-    font-weight:800;
-    color:var(--text);
+    font-size:14px; line-height:1.4;
+    margin:.75rem 0 .5rem; letter-spacing:.2px;
+    font-weight:800; color:var(--text);
   }
 
-  /* Ordered list with hanging numbers (Nature-style) */
   .publications-page .ref-list{
-    counter-reset: ref;
-    margin:0;
-    padding:0;
-    list-style:none;
+    counter-reset:ref; margin:0; padding:0; list-style:none;
     border-top:1px solid var(--line);
   }
   .publications-page .ref-item{
-    counter-increment: ref;
-    position:relative;
-    padding:.9rem 0;
-    border-bottom:1px solid var(--line);
+    counter-increment:ref; position:relative;
+    padding:.9rem 0; border-bottom:1px solid var(--line);
   }
   .publications-page .ref-item::before{
-    content: counter(ref) ".";
-    position:absolute;
-    left:0; top:.9rem;
-    width:2rem; text-align:right;
-    font-weight:800; color:var(--muted);
-    font-variant-numeric: tabular-nums;
+    content:counter(ref) ".";
+    position:absolute; left:0; top:.9rem; width:2rem; text-align:right;
+    font-weight:800; color:var(--muted); font-variant-numeric:tabular-nums;
   }
-
-  /* Entry body */
   .publications-page .ref-body{
     margin-left:2.5rem;
-    font-family:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size:12px;
-    line-height:1.65;
-    color:var(--text);
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:12px; line-height:1.65; color:var(--text);
   }
 
-  /* Highlight your name */
+  /* HARD OVERRIDES for boldness */
+  .publications-page strong,
+  .publications-page b{
+    font-weight:900 !important;
+  }
   .publications-page .me{
-    font-weight:900; /* heavier than 800 for clear emphasis */
+    font-weight:900 !important;
+    font-variation-settings:"wght" 900;
     background:linear-gradient(transparent 70%, rgba(11,114,255,.15) 0);
     padding:0 .02em;
   }
 
-  /* Journal: bold + italic (JACC-style emphasis) */
   .publications-page .journal{
-    font-style:italic;
-    font-weight:800;
+    font-style:italic; font-weight:800 !important;
     font-family:"Merriweather", Georgia, "Times New Roman", serif;
   }
 
-  /* Title links */
   .publications-page .ref-title{
-    color:var(--text);
-    text-decoration:none;
-    border-bottom:1px solid transparent;
+    color:var(--text); text-decoration:none; border-bottom:1px solid transparent;
     transition:border-color .15s ease, color .15s ease;
   }
   .publications-page .ref-title:hover{
-    color:var(--accent);
-    border-bottom-color:var(--accent);
-  }
-
-  /* DOI pill */
-  .publications-page .doi{
-    display:inline-block;
-    font-size:11px; line-height:1;
-    padding:.38rem .5rem; border-radius:999px;
-    border:1px solid var(--pill-border);
-    background:var(--pill-bg);
-    color:var(--accent);
-    text-decoration:none;
-    margin-left:.5rem; vertical-align:baseline;
-    letter-spacing:.2px;
-  }
-  .publications-page .doi:hover{ filter:brightness(.96); }
-
-  /* Muted meta text (dates, pages) */
-  .publications-page .meta{ color:var(--muted); }
-
-  /* Status pills for "In Progress" */
-  .publications-page .status{
-    display:inline-block;
-    font-size:11px; line-height:1;
-    padding:.38rem .5rem; border-radius:999px;
-    border:1px solid;
-    margin-left:.5rem; vertical-align:baseline;
-    letter-spacing:.2px;
-  }
-  .publications-page .status.is-manuscript{
-    color:#0b72ff; background:#f2f6ff; border-color:#cfe0ff;
-  }
-  .publications-page .status.is-abstract{
-    color:#4f7c15; background:#f3f8ea; border-color:#d6e8b6;
-  }
-  .publications-page .status.is-inprep{
-    color:#955700; background:#fff6e8; border-color:#ffe0b3;
-  }
-
-  /* For titles without links */
-  .publications-page .ref-title.no-link{
-    border-bottom:1px dashed transparent;
-  }
-  .publications-page .ref-title.no-link:hover{
     color:var(--accent); border-bottom-color:var(--accent);
   }
 
-  /* Small-screen tightening */
+  .publications-page .doi{
+    display:inline-block; font-size:11px; line-height:1;
+    padding:.38rem .5rem; border-radius:999px;
+    border:1px solid var(--pill-border); background:var(--pill-bg);
+    color:var(--accent); text-decoration:none; margin-left:.5rem; letter-spacing:.2px;
+  }
+  .publications-page .doi:hover{ filter:brightness(.96); }
+
+  .publications-page .meta{ color:var(--muted); }
+
+  .publications-page .status{
+    display:inline-block; font-size:11px; line-height:1;
+    padding:.38rem .5rem; border-radius:999px; border:1px solid;
+    margin-left:.5rem; letter-spacing:.2px;
+  }
+  .publications-page .status.is-manuscript{ color:#0b72ff; background:#f2f6ff; border-color:#cfe0ff; }
+  .publications-page .status.is-abstract{ color:#4f7c15; background:#f3f8ea; border-color:#d6e8b6; }
+  .publications-page .status.is-inprep{ color:#955700; background:#fff6e8; border-color:#ffe0b3; }
+
+  .publications-page .ref-title.no-link{ border-bottom:1px dashed transparent; }
+  .publications-page .ref-title.no-link:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+
   @media (max-width:520px){
     .publications-page .ref-item::before{ width:1.6rem; }
     .publications-page .ref-body{ margin-left:2rem; }
@@ -308,40 +266,3 @@ classes: publications-page
     </div>
   </li>
 </ol>
-
-<!-- Auto-wrap any plain-text "Liu H" with strong.me for consistent emphasis -->
-<script>
-(function () {
-  const blocks = document.querySelectorAll('.publications-page .ref-body');
-  if (!blocks.length) return;
-  const re = /\bLiu H\b/g;
-
-  function wrapNodeText(node){
-    const parts = node.nodeValue.split(/(Liu H)/);
-    const frag = document.createDocumentFragment();
-    parts.forEach(p => {
-      if (p === 'Liu H') {
-        const el = document.createElement('strong');
-        el.className = 'me';
-        el.textContent = p;
-        frag.appendChild(el);
-      } else {
-        frag.appendChild(document.createTextNode(p));
-      }
-    });
-    node.parentNode.replaceChild(frag, node);
-  }
-
-  function process(root){
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
-    const targets = [];
-    while (walker.nextNode()) {
-      const t = walker.currentNode;
-      if (t.nodeValue && re.test(t.nodeValue)) targets.push(t);
-    }
-    targets.forEach(wrapNodeText);
-  }
-
-  blocks.forEach(process);
-})();
-</script>
