@@ -140,14 +140,16 @@ classes: cv-page
 <div class="section">
   <h2>In Progress</h2>
   <ul>
-    <li><strong>Machine learning to improve risk prediction with coronary artery calcification density</strong> — Manuscript(1st author).</li>
-    <li><strong>Association between large-scale proteomics and valvular calcification (ARIC)</strong> — Manuscript(1st author).</li>
-    <li><strong>Trans-fat elimination in Nepal school policy</strong> — Abstract(1st author).</li>
-    <li><strong>New PAD diagnostic criteria and validity</strong> — Manuscript.</li>
-    <li><strong>Kidney Measures and PAD (Hispanics)</strong> — Manuscript.</li>
-    <li><strong>PAD prevalence &amp; risk factors (Hispanics)</strong> — Manuscript.</li>
+    <li><strong>Machine learning to improve risk prediction with coronary artery calcification density</strong> — Manuscript submitted to ARIC Committee(1st author)(Abstract submitted to Epi|Lifestyle 2026).</li>
+    <li><strong>Association between large-scale proteomics and valvular calcification: The Atherosclerosis Risk in Communities (ARIC) Study</strong> — Manuscript(1st author)(Abstract submitted to Epi|Lifestyle 2026).</li>
+    <li><strong>Trans-fat elimination in Nepal school policy</strong> — Abstract submitted to Epi|Lifestyle 2026(1st author).</li>
+    <li><strong>Validity of Ankle-Brachial Index and Other Modalities to Identify Peripheral Artery Disease in the Community</strong> — Manuscript (Abstract submitted to Epi|Lifestyle 2026).</li>
+    <li><strong>Comparative associations of joint pain and intermittent claudication with objectively measured physical activity: the Hispanic Community Health Study/Study of Latinos (HCHS/SOL)</strong> — Manuscript (Abstract submitted to Epi|Lifestyle 2026).</li>
+    <li><strong>Decentralized Hypertension Care Delivered by Non-physician Health Workers in Rural Bangladesh: Results of the CB-HEARTS Pilot Study</strong> — Manuscript(Abstract submitted to Epi|Lifestyle 2026).</li>
     <li><strong>CT-derived valvular calcification &amp; function (ARIC)</strong> — Manuscript.</li>
-    <li><strong>CB-HEARTS in Bangladesh</strong> — Abstract.</li>
+    <li><strong>Prevalence and Risk Factors of Peripheral Artery Disease Identified by Multimodalities in Hispanics
+</strong> — Manuscript.</li>
+    <li><strong>Kidney Measures and Peripheral Artery Disease Identified by Multimodalities in Hispanics</strong> — Manuscript.</li>
     <li><strong>Low-sodium salt substitute &amp; potassium in hypertension</strong> — In preparation.</li>
   </ul>
 </div>
