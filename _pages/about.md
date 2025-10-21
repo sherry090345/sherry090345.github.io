@@ -13,49 +13,51 @@ redirect_from:
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
 <style>
-  /* ===== Scoped Home Styles ===== */
+  /* ===== Scoped Home Styles (bigger, clearer) ===== */
   #home{
-    --text:#111418;
-    --muted:#5b6470;
-    --line:rgba(17,20,24,.10);
+    --text:#101318;
+    --muted:#5e6472;
+    --line:rgba(16,19,24,.12);
     --accent:#0b72ff;
     font-family:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color:var(--text);
-    font-size:12px;              /* desktop body */
-    line-height:1.65;
+    font-size:13.5px;            /* larger desktop body */
+    line-height:1.7;
     -webkit-text-size-adjust:100%;
   }
 
   /* headers */
   #home h1,#home h2,#home h3{
-    font-size:15px;              /* desktop headers */
+    font-size:17px;              /* larger desktop headers */
     line-height:1.35;
     font-weight:800;
     letter-spacing:.2px;
-    margin:1rem 0 .5rem;
+    margin:1.1rem 0 .65rem;
+    color:var(--text);
   }
 
-  /* text rhythm */
-  #home p{ margin:.45rem 0 .6rem; }
-  #home a{ color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(11,114,255,.25); }
+  /* rhythm & links */
+  #home p{ margin:.55rem 0 .75rem; }
+  #home a{ color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(11,114,255,.28); }
   #home a:hover{ border-bottom-color:var(--accent); }
 
-  #home ul, #home ol{ margin:.35rem 0 .7rem 1.1rem; }
-  #home li{ margin:.2rem 0; }
+  /* lists */
+  #home ul, #home ol{ margin:.45rem 0 .9rem 1.2rem; }
+  #home li{ margin:.28rem 0; }
 
   /* separators */
-  #home .sep{ height:1px; background:var(--line); margin:1rem 0; }
+  #home .sep{ height:1px; background:var(--line); margin:1.1rem 0; }
 
   /* journal emphasis */
   #home .journal{ font-family:"Merriweather", Georgia, "Times New Roman", serif; font-weight:700; font-style:italic; }
 
-  /* compact citation blocks */
-  #home .cite{ margin:.4rem 0 .55rem; }
+  /* citation block spacing */
+  #home .cite{ margin:.5rem 0 .7rem; }
 
-  /* ---- Mobile: 11/14 ---- */
+  /* ---- Mobile: slightly smaller for readability ---- */
   @media (max-width: 680px){
-    #home{ font-size:11px; line-height:1.6; }
-    #home h1, #home h2, #home h3{ font-size:14px; }
+    #home{ font-size:12px; line-height:1.65; }
+    #home h1, #home h2, #home h3{ font-size:15px; }
   }
 </style>
 
