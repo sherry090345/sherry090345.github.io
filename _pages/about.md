@@ -21,14 +21,14 @@ redirect_from:
     --accent:#0b72ff;
     font-family:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color:var(--text);
-    font-size:13.5px;            /* larger desktop body */
+    font-size:13.5px;             /* larger desktop body */
     line-height:1.7;
     -webkit-text-size-adjust:100%;
   }
 
   /* headers */
   #home h1,#home h2,#home h3{
-    font-size:17px;              /* larger desktop headers */
+    font-size:17px;               /* larger desktop headers */
     line-height:1.35;
     font-weight:800;
     letter-spacing:.2px;
@@ -51,13 +51,44 @@ redirect_from:
   /* journal emphasis */
   #home .journal{ font-family:"Merriweather", Georgia, "Times New Roman", serif; font-weight:700; font-style:italic; }
 
-  /* citation block spacing */
-  #home .cite{ margin:.5rem 0 .7rem; }
+  /* ---- Publication cards ---- */
+  #home .pubs{ display:flex; flex-direction:column; gap:.7rem; }
+  #home .pub-card{
+    display:grid;
+    grid-template-columns: 120px 1fr;   /* thumbnail + content */
+    gap:.8rem;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:.6rem;
+    background:#fbfbfd;
+  }
+  #home .pub-card .thumb{
+    width:120px; height:80px;           /* consistent thumbnail window */
+    border-radius:8px; overflow:hidden; background:#f2f2f5;
+    display:flex; align-items:center; justify-content:center;
+  }
+  #home .pub-card .thumb img{
+    width:100%; height:100%; object-fit:cover; display:block;
+  }
+  #home .pub-card .title{
+    margin:0 0 .15rem 0; line-height:1.45;
+  }
+  #home .pub-card .title a{
+    color:var(--text); text-decoration:none; border-bottom:1px solid rgba(11,114,255,.25);
+  }
+  #home .pub-card .title a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+  #home .pub-card .meta{ color:var(--muted); }
+  #home .pub-card .authors{ margin-top:.25rem; }
 
-  /* ---- Mobile: slightly smaller for readability ---- */
+  /* mobile */
   @media (max-width: 680px){
     #home{ font-size:12px; line-height:1.65; }
     #home h1, #home h2, #home h3{ font-size:15px; }
+    #home .pub-card{
+      grid-template-columns: 100px 1fr;
+      padding:.55rem;
+    }
+    #home .pub-card .thumb{ width:100px; height:70px; }
   }
 </style>
 
@@ -82,25 +113,69 @@ I am currently a Research Data Coordinator at the Johns Hopkins Welch Center for
 
 <h2>Selected Publication</h2>
 
-<p class="cite">
-  <a href="https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2824754" target="_blank" rel="noopener">Arm Position and Blood Pressure Readings: The ARMS Crossover Randomized Clinical Trial</a>, <span class="journal">JAMA Intern Med.</span><br>
-  <strong>Liu H,</strong> Zhao D, Sabit A, Pathiravasan CH, Ishigami J, Charleston J, Miller ER 3rd, Matsushita K, Appel LJ, Brady TM.
-</p>
+<div class="pubs">
 
-<p class="cite">
-  <a href="https://www.jstage.jst.go.jp/article/circj/89/10/89_CJ-24-0502/_article" target="_blank" rel="noopener">Association of Blood Urea Nitrogen With Incident Heart Failure in the Community - The Atherosclerosis Risk in Communities (ARIC) Study</a>, <span class="journal">Circ J.</span><br>
-  <strong>Liu H,</strong> Ishigami J, Mathews L, Konety S, Hall M, Chang PP, Ndumele C, Rosamond W, Matsushita K.
-</p>
+  <!-- ARMS -->
+  <div class="pub-card">
+    <div class="thumb">
+      <img src="/images/ARMS.png" alt="ARMS crossover trial figure">
+    </div>
+    <div class="content">
+      <p class="title">
+        <a href="https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2824754" target="_blank" rel="noopener">
+          Arm Position and Blood Pressure Readings: The ARMS Crossover Randomized Clinical Trial
+        </a>, <span class="journal">JAMA Intern Med.</span>
+      </p>
+      <p class="authors"><strong>Liu H,</strong> Zhao D, Sabit A, Pathiravasan CH, Ishigami J, Charleston J, Miller ER 3rd, Matsushita K, Appel LJ, Brady TM.</p>
+    </div>
+  </div>
 
-<p class="cite">
-  <a href="https://www.acpjournals.org/doi/10.7326/ANNALS-24-00873?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank" rel="noopener">Effects of Noise and Public Setting on Blood Pressure Readings : A Randomized Crossover Trial</a>, <span class="journal">Ann Intern Med.</span><br>
-  Ishigami J, <strong>Liu H,</strong> Zhao D, Sabit A, Pathiravasan CH, Charleston J, Miller ER 3rd, Matsushita K, Appel LJ, Brady TM.
-</p>
+  <!-- BUN & HF -->
+  <div class="pub-card">
+    <div class="thumb">
+      <img src="/images/BUN.jpg" alt="BUN and heart failure illustration">
+    </div>
+    <div class="content">
+      <p class="title">
+        <a href="https://www.jstage.jst.go.jp/article/circj/89/10/89_CJ-24-0502/_article" target="_blank" rel="noopener">
+          Association of Blood Urea Nitrogen With Incident Heart Failure in the Community — The ARIC Study
+        </a>, <span class="journal">Circ J.</span>
+      </p>
+      <p class="authors"><strong>Liu H,</strong> Ishigami J, Mathews L, Konety S, Hall M, Chang PP, Ndumele C, Rosamond W, Matsushita K.</p>
+    </div>
+  </div>
 
-<p class="cite">
-  <a href="https://www.sciencedirect.com/science/article/abs/pii/S0141813021011934" target="_blank" rel="noopener">A homogeneous polysaccharide from Lycium barbarum: Structural characterizations, anti-obesity effects and impacts on gut microbiota</a>, <span class="journal">Int J Biol Macromol.</span><br>
-  Yang Y, Chang Y, Wu Y, <strong>Liu H,</strong> Liu Q, Kang Z, Wu M, Yin H, Duan J.
-</p>
+  <!-- Noise/Public Setting -->
+  <div class="pub-card">
+    <div class="thumb">
+      <img src="/images/deci.png" alt="Noise and public setting schematic">
+    </div>
+    <div class="content">
+      <p class="title">
+        <a href="https://www.acpjournals.org/doi/10.7326/ANNALS-24-00873?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank" rel="noopener">
+          Effects of Noise and Public Setting on Blood Pressure Readings: A Randomized Crossover Trial
+        </a>, <span class="journal">Ann Intern Med.</span>
+      </p>
+      <p class="authors">Ishigami J, <strong>Liu H,</strong> Zhao D, Sabit A, Pathiravasan CH, Charleston J, Miller ER 3rd, Matsushita K, Appel LJ, Brady TM.</p>
+    </div>
+  </div>
+
+  <!-- Lycium barbarum -->
+  <div class="pub-card">
+    <div class="thumb">
+      <img src="/images/goji.png" alt="Lycium barbarum polysaccharide graphic">
+    </div>
+    <div class="content">
+      <p class="title">
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0141813021011934" target="_blank" rel="noopener">
+          A homogeneous polysaccharide from <em>Lycium barbarum</em>: Structural characterizations, anti-obesity effects and impacts on gut microbiota
+        </a>, <span class="journal">Int J Biol Macromol.</span>
+      </p>
+      <p class="authors">Yang Y, Chang Y, Wu Y, <strong>Liu H,</strong> Liu Q, Kang Z, Wu M, Yin H, Duan J.</p>
+    </div>
+  </div>
+
+</div>
 
 <div class="sep"></div>
 
