@@ -16,3 +16,6 @@ Key Highlights:
 - Used spline-based models and competing risk analysis
 - Showed additive predictive value of density and volume
 - Highlights clinical importance of advanced CAC phenotyping
+
+**Reference:** [AHA Journals – Abstract 4141338](https://www.ahajournals.org/doi/10.1161/circ.150.suppl_1.4141338)  
+<a class="btn btn--primary btn--small" href="https://www.ahajournals.org/doi/10.1161/circ.150.suppl_1.4141338" target="_blank" rel="noopener">Read online</a>
