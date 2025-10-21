@@ -12,13 +12,12 @@ classes: projects-page
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-/* ===== Elegant Projects Page ===== */
+/* ===== Refined Projects Page ===== */
 .projects-page{
   --text:#0e1116;
-  --muted:#5e6472;
-  --line:rgba(15,17,22,.10);
+  --muted:#616979;
+  --line:rgba(14,17,22,.10);
   --card:#ffffff;
-  --bg:#fafbff;
   --accent:#0b72ff;
   --accent-2:#5b8cff;
   --pill:#eef4ff;
@@ -29,9 +28,7 @@ classes: projects-page
 }
 
 /* Section header */
-.projects-page .section{
-  margin: 1.2rem 0 1.4rem;
-}
+.projects-page .section{ margin: 1.1rem 0 1.2rem; }
 .projects-page .kicker{
   display:inline-block;
   font: 800 12px/1 "Inter";
@@ -70,11 +67,8 @@ classes: projects-page
   overflow:hidden;
 }
 .projects-page .card::before{
-  /* subtle left accent bar */
   content:"";
-  position:absolute;
-  inset:0 auto 0 0;
-  width:4px;
+  position:absolute; inset:0 auto 0 0; width:4px;
   background:linear-gradient(180deg, var(--accent), var(--accent-2));
   opacity:.85;
 }
@@ -84,42 +78,51 @@ classes: projects-page
   border-color: rgba(15,17,22,.14);
 }
 
-/* Title + subtitle */
+/* Title + one-liner */
 .projects-page .card-title{
-  font: 800 16px/1.35 "Inter";
-  margin:0 0 .35rem 0;
+  font:800 16px/1.35 "Inter";
+  margin:0 0 .25rem;
 }
-.projects-page .subtitle{
-  font: 600 12px/1.1 "Inter";
+.projects-page .one-line{
+  font:600 12.5px/1.4 "Inter";
   color:var(--muted);
   letter-spacing:.2px;
-  margin:-.15rem 0 .55rem 0;
+  margin:0 0 .55rem;
 }
 
-/* Body text */
+/* Summary */
 .projects-page .card-desc{
-  font: 400 13.2px/1.62 "Inter";
-  margin: 0 0 .55rem;
+  font:400 13.2px/1.62 "Inter";
+  margin:0 0 .55rem;
 }
 
-/* Role line */
-.projects-page .meta{
-  font: 700 12px/1.45 "Inter";
+/* Eyebrow labels */
+.projects-page .eyebrow{
+  font:800 11px/1 "Inter";
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  color:#1f2a3a;
+  margin:.45rem 0 .35rem;
+}
+
+/* Role list: short, readable pills */
+.projects-page .meta-list{
+  display:flex; flex-wrap:wrap; gap:.35rem .6rem;
+  list-style:none; padding:0; margin:0 0 .4rem 0;
+}
+.projects-page .meta-list li{
+  font:600 11.5px/1 "Inter";
   color:#1e2732;
-  margin:.2rem 0 .35rem;
-}
-.projects-page .meta small{
-  font-weight: 400;
-  color: var(--muted);
+  background:#f7f9ff;
+  border:1px solid #e3ecff;
+  border-radius:999px;
+  padding:.42rem .6rem;
 }
 
-/* Tags */
-.projects-page .tags{
-  display:flex; flex-wrap:wrap; gap:.4rem;
-  margin-top:.25rem;
-}
+/* Methods tags */
+.projects-page .tags{ display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.15rem; }
 .projects-page .tag{
-  font: 700 11px/1 "Inter";
+  font:700 11px/1 "Inter";
   padding:.46rem .58rem;
   border-radius:999px;
   background: var(--pill);
@@ -135,12 +138,10 @@ classes: projects-page
   text-decoration:none;
   border-bottom:1px solid rgba(11,114,255,.30);
 }
-.projects-page a.link:hover{
-  border-bottom-color: var(--accent);
-}
+.projects-page a.link:hover{ border-bottom-color: var(--accent); }
 
-/* Spacing between thematic sections */
-.projects-page .spacer{ height: 2px; background:var(--line); margin:1.25rem 0 1.1rem; border-radius:2px; }
+/* Section divider */
+.projects-page .spacer{ height:2px; background:var(--line); margin:1.2rem 0 1.1rem; border-radius:2px; }
 </style>
 
 <!-- =========================
@@ -155,53 +156,66 @@ classes: projects-page
 
   <div class="card">
     <div class="card-title">Coronary Artery Calcification &amp; CVD Outcome — Machine Learning</div>
-    <div class="subtitle">Elastic Net • Random Forest • Competing Risk</div>
+    <p class="one-line">Elastic Net and Random Forest on CAC density and volume with competing-risk evaluation.</p>
     <p class="card-desc">
-      Build ML models on CAC density and volume to identify features associated with cardiovascular events.
-      Evaluate improvement over clinical baselines via C-statistic, NRI, and IDI, accounting for competing risk with Fine–Gray.
+      Identify predictors of cardiovascular events and quantify improvement over clinical baselines using C-statistic, NRI, and IDI with Fine–Gray.
     </p>
-    <div class="meta">Role &amp; skills <small>data curation; feature engineering; Cox/Fine–Gray; model development &amp; validation; interpretation and figures; R/tidyverse</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Data curation</li><li>Feature engineering</li><li>Model dev &amp; validation</li><li>Figures &amp; interpretation</li><li>Reproducible code</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
-      <span class="tag">Elastic Net</span><span class="tag">Random Forest</span><span class="tag">Fine–Gray</span><span class="tag">NRI / IDI</span><span class="tag">C-stat</span>
+      <span class="tag">Elastic Net</span><span class="tag">Random Forest</span><span class="tag">Cox / Fine–Gray</span><span class="tag">NRI</span><span class="tag">IDI</span><span class="tag">C-stat</span>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-title">Proteomics and Valvular Calcification (ARIC &amp; MESA)</div>
-    <div class="subtitle">Discovery + Replication • Multiple Testing • Pathways</div>
+    <div class="card-title">Proteomics and Valvular Calcification — ARIC &amp; MESA</div>
+    <p class="one-line">Discovery in ARIC with replication in MESA, plus pathway summaries.</p>
     <p class="card-desc">
-      Discovery in ARIC and replication in MESA to identify proteins associated with valvular calcification.
-      Adjust for covariates and multiple testing; assemble candidate panels, explore pathways, and assess incremental prediction.
+      Test protein–calcification associations with covariate adjustment and multiple testing control. Build candidate panels and assess incremental prediction.
     </p>
-    <div class="meta">Role &amp; skills <small>analysis plan; batch/QC; GLM/GLMM; FDR/Bonferroni; multi-cohort replication; pathway summaries</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Analysis plan</li><li>Batch/QC</li><li>Replication</li><li>Pathway reporting</li><li>Manuscript support</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
-      <span class="tag">Proteomics</span><span class="tag">ARIC/MESA</span><span class="tag">FDR</span><span class="tag">Replication</span><span class="tag">Pathway</span>
+      <span class="tag">GLM / GLMM</span><span class="tag">FDR</span><span class="tag">Bonferroni</span><span class="tag">Multi-cohort</span>
     </div>
   </div>
 
   <div class="card">
     <div class="card-title">Valvular Calcification &amp; Valvular Dysfunction</div>
-    <div class="subtitle">CT • Echo • Spline Models</div>
+    <p class="one-line">CT-derived calcification vs echocardiographic function.</p>
     <p class="card-desc">
-      Quantify associations between CT-derived valvular calcification and echocardiographic function (e.g., aortic stenosis)
-      using spline-based linear and logistic regression; report discrimination (AUC) and calibration with sensitivity analyses.
+      Estimate associations with spline-based linear and logistic models. Report discrimination by AUC and evaluate calibration and sensitivity analyses.
     </p>
-    <div class="meta">Role &amp; skills <small>variable construction; spline modeling; AUC &amp; calibration; subgroup/sensitivity; figure preparation</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Variable construction</li><li>Spline modeling</li><li>AUC &amp; calibration</li><li>Subgroup &amp; sensitivity</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
-      <span class="tag">Spline</span><span class="tag">Logistic</span><span class="tag">AUC</span><span class="tag">Subgroup</span>
+      <span class="tag">Spline</span><span class="tag">Logistic</span><span class="tag">AUC</span>
     </div>
   </div>
 
   <div class="card">
     <div class="card-title">Blood Urea Nitrogen &amp; Incident CVD</div>
-    <div class="subtitle">ARIC • Survival Analysis</div>
+    <p class="one-line">ARIC cohort survival analysis with validation checks.</p>
     <p class="card-desc">
-      Survival analysis of BUN and incident cardiovascular outcomes with stratified and sensitivity analyses;
-      results published in <a class="link" href="https://doi.org/10.1253/circj.CJ-24-0502" target="_blank" rel="noopener">Circ&nbsp;J</a>.
+      Association of BUN with incident cardiovascular outcomes. Results published in
+      <a class="link" href="https://doi.org/10.1253/circj.CJ-24-0502" target="_blank" rel="noopener">Circ&nbsp;J</a>.
     </p>
-    <div class="meta">Role &amp; skills <small>study definitions; data cleaning; Cox modeling; reproducible code; manuscript writing</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Study definitions</li><li>Data cleaning</li><li>Cox modeling</li><li>Manuscript writing</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
-      <span class="tag">Survival</span><span class="tag">Cox</span><span class="tag">Sensitivity</span><span class="tag">Reporting</span>
+      <span class="tag">Survival</span><span class="tag">Cox</span><span class="tag">Sensitivity</span>
     </div>
   </div>
 
@@ -221,51 +235,66 @@ classes: projects-page
 
   <div class="card">
     <div class="card-title">Healthy Food Procurement — Nepal School Survey</div>
-    <div class="subtitle">Pre–Post • LMM / MELR / CLMM</div>
+    <p class="one-line">Pre–post evaluation of food environment and trans-fat availability.</p>
     <p class="card-desc">
-      Pre–post evaluation of school food environment and trans-fat availability using LMM, mixed-effects logistic regression,
-      and CLMM; built retention/flow metrics and Sankey visualizations to inform municipal policy.
+      Mixed-effects models to assess change and build interpretable visuals for municipal policy.
     </p>
-    <div class="meta">Role &amp; skills <small>measurement framework; variable harmonization; modeling &amp; robustness checks; visualization; abstract writing</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Measurement framework</li><li>Harmonization</li><li>Robustness checks</li><li>Visualization</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
-      <span class="tag">LMM</span><span class="tag">GLMM</span><span class="tag">CLMM</span><span class="tag">Sankey</span><span class="tag">Policy Eval</span>
+      <span class="tag">LMM</span><span class="tag">Mixed-effects logistic</span><span class="tag">CLMM</span>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-title">Low-Sodium Salt Substitute — Bangladesh RCT (Med Users)</div>
-    <div class="subtitle">Safety • Feasibility • REDCap</div>
+    <div class="card-title">Low-Sodium Salt Substitute — Bangladesh RCT (med users)</div>
+    <p class="one-line">Questionnaire, REDCap, and feasibility monitoring.</p>
     <p class="card-desc">
-      Questionnaire design and REDCap dataset/documentation; safety/feasibility monitoring among participants on antihypertensive therapy to prepare for implementation.
+      Build instruments and data flow for safe implementation among antihypertensive users.
     </p>
-    <div class="meta">Role &amp; skills <small>REDCap design; data flow &amp; QC; SOP/IRB documentation</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>REDCap design</li><li>Data QC</li><li>SOP &amp; IRB docs</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
-      <span class="tag">REDCap</span><span class="tag">Trial Ops</span><span class="tag">Questionnaire</span>
+      <span class="tag">Trial ops</span><span class="tag">Feasibility</span><span class="tag">Safety</span>
     </div>
   </div>
 
   <div class="card">
     <div class="card-title">Low-Sodium Salt Substitute — Research Prioritization</div>
-    <div class="subtitle">Road-mapping • Survey</div>
+    <p class="one-line">Priority-setting survey and roadmap.</p>
     <p class="card-desc">
-      Designed and fielded a prioritization survey; synthesized responses and co-wrote sections defining a research roadmap for low-sodium salt substitutes.
+      Design the survey, synthesize responses, and help draft the research agenda.
     </p>
-    <div class="meta">Role &amp; skills <small>survey build; data cleaning &amp; visualization; writing &amp; coordination</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Survey build</li><li>Cleaning &amp; visualization</li><li>Writing &amp; coordination</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
-      <span class="tag">Survey</span><span class="tag">Evidence Map</span><span class="tag">Manuscript</span>
+      <span class="tag">Survey</span><span class="tag">Evidence map</span><span class="tag">Road-mapping</span>
     </div>
   </div>
 
   <div class="card">
     <div class="card-title">Natural Product Polysaccharides &amp; Microbiome</div>
-    <div class="subtitle">Botanical Polysaccharides • In-vivo</div>
+    <p class="one-line">Isolation, purification, and in-vivo assessment.</p>
     <p class="card-desc">
-      Isolation/purification and in-vivo assessment of botanical polysaccharides; effects on microbiome and metabolic outcomes;
-      published in <a class="link" href="https://doi.org/10.1016/j.ijbiomac.2021.05.209" target="_blank" rel="noopener">Int&nbsp;J&nbsp;Biol&nbsp;Macromol</a>.
+      Study microbiome and metabolic effects; published in
+      <a class="link" href="https://doi.org/10.1016/j.ijbiomac.2021.05.209" target="_blank" rel="noopener">Int&nbsp;J&nbsp;Biol&nbsp;Macromol</a>.
     </p>
-    <div class="meta">Role &amp; skills <small>experimental collaboration; figure preparation; manuscript organization</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Experimental collaboration</li><li>Figure prep</li><li>Manuscript organization</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
-      <span class="tag">Microbiome</span><span class="tag">Natural Products</span><span class="tag">In-vivo</span>
+      <span class="tag">Microbiome</span><span class="tag">Natural products</span><span class="tag">In-vivo</span>
     </div>
   </div>
 
@@ -285,12 +314,15 @@ classes: projects-page
 
   <div class="card">
     <div class="card-title">Arm Position &amp; Blood Pressure — Crossover Trial</div>
-    <div class="subtitle">Design • Paired / LMM</div>
+    <p class="one-line">Quantifies overestimation from common arm positions.</p>
     <p class="card-desc">
-      Quantified BP overestimation from common clinical arm position using paired t-tests and LMM; published in
-      <a class="link" href="https://doi.org/10.1001/jamainternmed.2024.5213" target="_blank" rel="noopener">JAMA&nbsp;Intern&nbsp;Med</a>.
+      Results published in <a class="link" href="https://doi.org/10.1001/jamainternmed.2024.5213" target="_blank" rel="noopener">JAMA&nbsp;Intern&nbsp;Med</a>.
     </p>
-    <div class="meta">Role &amp; skills <small>analysis plan; paired/mixed models; figure creation; interpretation</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Analysis plan</li><li>Paired &amp; mixed models</li><li>Figure creation</li><li>Interpretation</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
       <span class="tag">Paired t-test</span><span class="tag">LMM</span><span class="tag">Trial</span>
     </div>
@@ -298,12 +330,15 @@ classes: projects-page
 
   <div class="card">
     <div class="card-title">Public Setting &amp; Noise Effects on BP</div>
-    <div class="subtitle">Crossover • Environmental Noise</div>
+    <p class="one-line">Ambient noise and public setting in a crossover design.</p>
     <p class="card-desc">
-      Assessed impact of ambient noise and public setting on BP in a crossover design; published in
-      <a class="link" href="https://doi.org/10.7326/ANNALS-24-00873" target="_blank" rel="noopener">Ann&nbsp;Intern&nbsp;Med</a>.
+      Published in <a class="link" href="https://doi.org/10.7326/ANNALS-24-00873" target="_blank" rel="noopener">Ann&nbsp;Intern&nbsp;Med</a>.
     </p>
-    <div class="meta">Role &amp; skills <small>data cleaning; paired analyses; visualization; writing support</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Data cleaning</li><li>Paired analyses</li><li>Visualization</li><li>Writing support</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
       <span class="tag">Crossover</span><span class="tag">Paired</span><span class="tag">LMM</span>
     </div>
@@ -311,13 +346,17 @@ classes: projects-page
 
   <div class="card">
     <div class="card-title">Community-Based HEARTS (Pilot), Bangladesh</div>
-    <div class="subtitle">Program Evaluation • BP Trajectories</div>
+    <p class="one-line">Medication changes, retention, BP control, and trajectories.</p>
     <p class="card-desc">
-      Monitored follow-up data and led analyses of medication changes, retention, BP control, and trajectories to support program scale-up.
+      Analytic support for scale-up decisions and program reporting.
     </p>
-    <div class="meta">Role &amp; skills <small>data monitoring; statistical analysis &amp; visualization; communication and deliverables</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Data monitoring</li><li>Analysis &amp; visualization</li><li>Comms &amp; deliverables</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
-      <span class="tag">Retention</span><span class="tag">Trajectories</span><span class="tag">Program Eval</span>
+      <span class="tag">Trajectories</span><span class="tag">Program eval</span><span class="tag">Retention</span>
     </div>
   </div>
 
@@ -336,12 +375,16 @@ classes: projects-page
 <div class="grid">
 
   <div class="card">
-    <div class="card-title">PAD in Hispanics — Prevalence &amp; Risk Factors (Multimodality)</div>
-    <div class="subtitle">Stratified Effects • Interaction</div>
+    <div class="card-title">PAD in Hispanics — Prevalence &amp; Risk Factors</div>
+    <p class="one-line">Multimodality estimates with stratified and interaction effects.</p>
     <p class="card-desc">
-      Combined modalities to estimate PAD prevalence and risk factors, with stratified and interaction analyses to keep outputs clinically interpretable.
+      Focus on clinically interpretable outputs for diverse subgroups.
     </p>
-    <div class="meta">Role &amp; skills <small>analysis design &amp; code; subgroup and sensitivity; visualization and summary</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Design &amp; code</li><li>Subgroup &amp; sensitivity</li><li>Visualization &amp; summary</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
       <span class="tag">Logistic</span><span class="tag">Multimodality</span><span class="tag">Subgroup</span>
     </div>
@@ -349,23 +392,31 @@ classes: projects-page
 
   <div class="card">
     <div class="card-title">New PAD Diagnostic Criteria — Validity</div>
-    <div class="subtitle">Thresholds • Se/Sp • Agreement</div>
+    <p class="one-line">Compare sensitivity, specificity, and agreement vs existing thresholds.</p>
     <p class="card-desc">
-      Compared sensitivity/specificity and agreement for new vs. existing diagnostic thresholds across risk strata to provide performance evidence.
+      Performance across risk strata to inform diagnostic use.
     </p>
-    <div class="meta">Role &amp; skills <small>definitions &amp; data wrangling; Se/Sp assessment; methods &amp; results writing</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Definitions &amp; wrangling</li><li>Se/Sp assessment</li><li>Methods &amp; results writing</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
       <span class="tag">Se/Sp</span><span class="tag">ROC</span><span class="tag">Thresholds</span>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-title">Kidney Measures &amp; PAD (Hispanics)</div>
-    <div class="subtitle">KDIGO • Stratified / Interaction</div>
+    <div class="card-title">Kidney Measures &amp; PAD in Hispanics</div>
+    <p class="one-line">KDIGO categories with stratified and interaction modeling.</p>
     <p class="card-desc">
-      Evaluated kidney measures vs. PAD outcomes using KDIGO stratification; quantified independent and interaction effects.
+      Independent and interaction effects for PAD outcomes.
     </p>
-    <div class="meta">Role &amp; skills <small>variable derivation; stratified/interaction modeling; visualization &amp; interpretation</small></div>
+    <div class="eyebrow">My role</div>
+    <ul class="meta-list">
+      <li>Variable derivation</li><li>Stratified/interaction models</li><li>Visualization &amp; interpretation</li>
+    </ul>
+    <div class="eyebrow">Methods</div>
     <div class="tags">
       <span class="tag">KDIGO</span><span class="tag">Stratified</span><span class="tag">Interaction</span>
     </div>
