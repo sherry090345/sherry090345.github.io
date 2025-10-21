@@ -34,7 +34,7 @@ classes: cv-page
 <!-- ===================================================== -->
 <!-- Header (keeps theme's left profile via author_profile) -->
 <!-- ===================================================== -->
-**Hairong (Sherry) Liu**  
+**Sherry (Hairong) Liu**  
 <span class="muted">hliu146@jh.edu · (+1) 410-585-5962 · Baltimore, MD</span>
 
 <!-- ===================== Education ===================== -->
@@ -140,9 +140,9 @@ classes: cv-page
 <div class="section">
   <h2>In Progress</h2>
   <ul>
-    <li><strong>Machine learning to improve risk prediction with coronary artery calcification density</strong> — Manuscript.</li>
-    <li><strong>Association between large-scale proteomics and valvular calcification (ARIC)</strong> — Manuscript.</li>
-    <li><strong>Trans-fat elimination in Nepal school policy</strong> — Abstract.</li>
+    <li><strong>Machine learning to improve risk prediction with coronary artery calcification density</strong> — Manuscript(1st author).</li>
+    <li><strong>Association between large-scale proteomics and valvular calcification (ARIC)</strong> — Manuscript(1st author).</li>
+    <li><strong>Trans-fat elimination in Nepal school policy</strong> — Abstract(1st author).</li>
     <li><strong>New PAD diagnostic criteria and validity</strong> — Manuscript.</li>
     <li><strong>Kidney Measures and PAD (Hispanics)</strong> — Manuscript.</li>
     <li><strong>PAD prevalence &amp; risk factors (Hispanics)</strong> — Manuscript.</li>
@@ -166,24 +166,24 @@ classes: cv-page
 
   <h3>Nutrition</h3>
   <ul>
-    <li><strong>Healthy Food Procurement (Nepal):</strong> LMM, mixed-effects logistic, CLMM; policy-ready visuals.</li>
-    <li><strong>Low-Sodium Salt Substitute RCT (Bangladesh):</strong> questionnaire &amp; REDCap build; feasibility/safety monitoring.</li>
-    <li><strong>Salt Substitute Research Prioritization:</strong> survey design, synthesis, research roadmap.</li>
-    <li><strong>Natural Product Polysaccharides:</strong> botanical polysaccharides; microbiome/metabolic outcomes; <em>Int J Biol Macromol</em>.</li>
+    <li><strong>Healthy Food Procurement (Nepal):</strong> Linear-mixed effect model (LMM), mixed-effect logistic regression (MELR),cumulative logistic mixed-effect model (CLMM); policy-ready visuals.</li>
+    <li><strong>Low-Sodium Salt Substitute RCT (Bangladesh):</strong> Design questionnaire &amp; REDCap build for this randomized trial in preparation.</li>
+    <li><strong>Salt Substitute Research Prioritization:</strong> Organize, synthesis and data summarize for this international webinar for 10+ countries</li>
+    <li><strong>Natural Product Polysaccharides:</strong> botanical polysaccharides; microbiome/metabolic outcomes in mice; animal model; <em>Int J Biol Macromol</em>.</li>
   </ul>
 
   <h3>Hypertension</h3>
   <ul>
     <li><strong>ARMS trial:</strong> effect of arm position; paired t-tests &amp; LMM; <em>JAMA Intern Med</em>.</li>
-    <li><strong>Noise/Public Setting:</strong> crossover analyses; <em>Ann Intern Med</em>.</li>
-    <li><strong>CB-HEARTS (Bangladesh):</strong> retention, medication changes, BP control, trajectories.</li>
+    <li><strong>Noise/Public Setting:</strong> partial data analysis and full visulization; abstract drafting;revision; <em>Ann Intern Med</em>.</li>
+    <li><strong>CB-HEARTS (Bangladesh):</strong> data analysis longitudinal retention, medication changes, BP control, trajectories.</li>
   </ul>
 
   <h3>Peripheral Artery Disease</h3>
   <ul>
-    <li><strong>Hispanics PAD:</strong> multimodality prevalence &amp; risk; subgroup/interaction.</li>
-    <li><strong>New Diagnostic Criteria:</strong> sensitivity, specificity, agreement across risk strata.</li>
-    <li><strong>KDIGO &amp; PAD:</strong> independent and interaction effects using KDIGO categories.</li>
+    <li><strong>Hispanics PAD:</strong> data analysis using multinomial logistic;multimodality prevalence &amp; risk; subgroup/interaction.</li>
+    <li><strong>New Diagnostic Criteria:</strong> data analysis for sensitivity, specificity, agreement across risk strata.</li>
+    <li><strong>KDIGO &amp; PAD:</strong> data analysis for independent risk using KDIGO categories.</li>
   </ul>
 </div>
 
