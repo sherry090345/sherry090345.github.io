@@ -1,7 +1,7 @@
 ---
 title: "Undergraduate Commencement"
 date: 2021-06-20
-permalink: /posts/2021/06/undergrad-commencement/
+permalink: /posts/2021-06-20-undergrad
 tags:
   - milestone
   - commencement
