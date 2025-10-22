@@ -205,7 +205,7 @@ classes: cv-page
   <div class="card">
     <h3>Research Assistant (Remote)</h3>
     <div class="split">
-      <span class="where">Vanke School of Public Health, Tsinghua University — Beijing, China</span>
+      <span class="where">School of Medicine, Tsinghua University — Beijing, China</span>
       <span class="when">May 2025 – Present · Part-time</span>
     </div>
     <ul><li>Lead analyses of Chinese perinatal survey data (diet patterns &amp; pregnancy outcomes; home environmental toxins &amp; adverse outcomes).</li></ul>
