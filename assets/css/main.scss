@@ -192,17 +192,4 @@ h1, h2, h3 { color: #0c1321; }
 }
 .container .content a:hover{ border-bottom-color:rgba(47,125,225,.6); }
 
-/* 暗色模式自适配 */
-@media (prefers-color-scheme: dark){
-  :root{
-    --card-bg:#16181c;
-    --card-br:#2a3036;
-    --card-shadow:0 8px 22px rgba(0,0,0,.35);
-    --text:#e6ebf0;
-    --muted:#98a2ad;
-    --brand:#7ab0ff;
-    --brand-weak:#0e223a;
-  }
-  .container .item.open .content{ border-top-color:#293039; }
-}
 
