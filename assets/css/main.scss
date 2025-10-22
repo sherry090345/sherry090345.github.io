@@ -75,16 +75,6 @@ a:hover { border-bottom-color: #0b72ff; }
 /* Optional: page section headers look a bit bolder */
 h1, h2, h3 { color: #0c1321; }
 
-/* Dark-mode fallback */
-@media (prefers-color-scheme: dark) {
-  :root { --site-bg: #0b1220; }
-  body { color: #e6ebf3; }
-  a { color: #8ab4ff; border-bottom-color: rgba(138,180,255,.35); }
-  .highlight, pre, code, .notice, .card {
-    background: #0f172a !important;
-    border-color: rgba(255,255,255,.08);
-  }
-}
 /* 顶部导航下划线动效，作用到 Minimal Mistakes 的 masthead */
 .greedy-nav .visible-links a {
   position: relative;
